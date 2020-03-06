@@ -31,7 +31,7 @@
             {% endif %}
                 <div class="card blog__slide text-center">
                   <div class="blog__slide__img">
-                    <img class="card-img rounded-0" src={{post.image_url}} alt="">
+                    <img class="card-img rounded-0" src="{{post.image_url}}" alt="">
                   </div>
                   <div class="blog__slide__content">
                     <h3><a href="{% url 'post_detail' slug=post.slug %}">{{post.title}}</a></h3>
@@ -54,7 +54,7 @@
               <div class="single-recent-blog-post">
                 <div class="thumb">
                   {% if post.image_url %}
-                    <img class="img-fluid" src={{post.image_url}} alt="">
+                    <img class="img-fluid" src="{{post.image_url}}" alt="">
                   {% else %}
                     <img class="img-fluid" src='{% static "img/banner/blog.png" %}' alt="">
                   {% endif %}
